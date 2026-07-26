@@ -68,7 +68,7 @@
 /* Red Divider Line */
 .card-divider {
   height: 4px;
-  background-color: #e50914;
+  background-color: #0b223980;
   width: 100%;
 }
 
@@ -132,7 +132,7 @@ card-bullet-list {
 }
 
 .card-bullet-item::marker {
-  color: #e50914; /* Red bullet points to match the theme */
+  color: #0b2239; /* Red bullet points to match the theme */
 }
 
 /* Links Section */
@@ -164,7 +164,7 @@ card-bullet-list {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background-color: #e50914;
+  background-color: #0b2239;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -181,7 +181,7 @@ card-bullet-list {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background-color: #e50914;
+  background-color: #0b223980;
   color: #ffffff;
   display: flex;
   align-items: center;
