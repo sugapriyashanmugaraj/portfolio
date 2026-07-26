@@ -1,0 +1,137 @@
+.authCont {
+  box-shadow: 0px 0px 2px #444251;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 100px;
+
+  @media screen and (min-width: 0px) {
+    height: 400px;
+    width: 300px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 500px) {
+    height: 450px;
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
+}
+.authLoginCont {
+  @media screen and (min-width: 0px) {
+    height: 400px;
+    width: 300px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 500px) {
+    height: 400px;
+    width: 400px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
+}
+.authInnCont {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.authHeading {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "OpenSans-Bold";
+  color: #0b2239;
+  text-align: center;
+}
+.signUpBtn {
+  border: none;
+  margin: 0 auto;
+  background-color: #444251;
+  border-radius: 5px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  font-family: "OpenSans-SemiBold";
+  color: #fff;
+  font-size: 16px;
+}
+.signUpBtn:disabled {
+  background-color: #ccc; /* Example background color for disabled state */
+  cursor: not-allowed; /* Example cursor for disabled state */
+}
+.passProgOut {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.formIcons {
+  font-size: 20px !important;
+  color: #bbb;
+}
+
+.passwordInfoCont {
+  position: fixed;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 2;
+  margin-top: 100px;
+  border: 1px solid #ccc;
+  max-width: max-content;
+  /* display: none; */
+}
+
+.passwordInfoDet {
+  margin-left: 20px;
+}
+.passHintHead {
+  width: 300px;
+  font-weight: 600;
+  margin-left: -18px;
+}
+.singlePassOpt {
+  padding: 2.5px;
+}
+.termsContents p {
+  margin-bottom: 15px;
+}
+.termsContents h1,
+h2 {
+  color: #333;
+}
+.termsContents ol,
+ul {
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+.termsContents li {
+  margin-bottom: 10px;
+}
+.termsContents h2 {
+  margin-top: 20px;
+}
+.termsContents {
+  margin-top: 20px;
+}
+
+.smallTextAuth {
+  font-size: 14px;
+  color: #444251;
+}
+.smallTextUndAuth {
+  font-size: 14px;
+  color: #0b2239;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 5px;
+}

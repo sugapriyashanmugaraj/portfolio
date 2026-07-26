@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.progress-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
+.progress-container {
+  width: 100%;
+  max-width: 950px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 35px 30px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Horizontal connector */
+.progress-container::before {
+  content: "";
+  position: absolute;
+  top: 49px;
+  left: calc(12.5% + 14px);
+  right: calc(12.5% + 14px);
+  height: 3px;
+  background: #19b56b;
+  z-index: 1;
+}
+
+.step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.step-top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #19b56b;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.line {
+  display: none;
+}
+
+.step-content {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.step-content h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.subtitle {
+  margin-top: 6px;
+  font-size: 18px;
+  color: #8b8b8b;
+}
+
+/* ===========================
+   Tablet & Mobile
+=========================== */
+
+@media (max-width: 768px) {
+  .progress-card {
+    justify-content: center;
+  }
+
+  .progress-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    padding: 30px 20px;
+  }
+
+  /* Remove horizontal line */
+  .progress-container::before {
+    display: none;
+  }
+
+  .step {
+    width: auto;
+    min-width: 260px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .step-top {
+    width: 28px;
+    min-width: 28px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-right: 20px;
+  }
+
+  /* Vertical connector */
+  .step:not(:last-child) .step-top::after {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 62px;
+    background: #19b56b;
+  }
+
+  .circle {
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+  }
+
+  .step-content {
+    margin: 0;
+    text-align: left;
+  }
+
+  .step-content h4 {
+    font-size: 18px;
+  }
+
+  .subtitle {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 480px) {
+  .progress-card {
+    padding: 15px;
+  }
+
+  .progress-container {
+    padding: 20px 15px;
+    gap: 30px;
+  }
+
+  .step {
+    min-width: 220px;
+  }
+
+  .circle {
+    width: 22px;
+    height: 22px;
+    font-size: 10px;
+  }
+
+  .step-content h4 {
+    font-size: 16px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+}

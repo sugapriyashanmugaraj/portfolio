@@ -1,0 +1,142 @@
+/* Container using Flexbox with Wrap for seamless centering behavior */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers items overall, including the last lone item */
+  gap: 40px 16px; /* 40px row gap for clear row differentiation, 16px column gap */
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Base Card Width Calculation based on screen breakpoints */
+
+/* Desktop: Row 1 = 4 items (~23%), Row 2 = 5 items (~18%) */
+@media (min-width: 1200px) {
+  /* First 4 items span ~23% width each */
+  .card-item:nth-child(-n + 4) {
+    flex: 0 0 calc(25% - 16px);
+    max-width: calc(25% - 16px);
+  }
+
+  /* Remaining items (Row 2) span ~18% width each */
+  .card-item:nth-child(n + 5) {
+    flex: 0 0 calc(20% - 16px);
+    max-width: calc(20% - 16px);
+    margin-top: 20px; /* Extra row differentiation */
+  }
+}
+
+/* Tablet: 3 per row (~31% each) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .card-item {
+    flex: 0 0 calc(33.333% - 16px);
+    max-width: calc(33.333% - 16px);
+  }
+}
+
+/* Mobile: 2 per row (~48% each) */
+@media (min-width: 480px) and (max-width: 767px) {
+  .card-item {
+    flex: 0 0 calc(50% - 16px);
+    max-width: calc(50% - 16px);
+  }
+
+  /* If total items are odd (like 9 items), center the very last item */
+  .card-item:last-child:nth-child(odd) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Small Mobile: 1 per row (100% width) */
+@media (max-width: 479px) {
+  .card-item {
+    flex: 0 0 100%;
+    max-width: 320px; /* Keeps single card from getting stretched unnaturally */
+  }
+}
+
+/* Individual Card Styling */
+.card-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  padding: 20px 30px 20px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+/* Stagger Offset Effects */
+.card-item.even {
+  transform: translateY(20px); /* Stagger offset */
+}
+
+.card-item.odd {
+  transform: translateY(0);
+}
+
+/* Disable stagger on 1-column layout for uniform alignment */
+@media (max-width: 479px) {
+  .card-item.even {
+    transform: translateY(0);
+  }
+}
+
+/* Oval Logo */
+.card-logo {
+  width: 100px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Title Banner */
+.card-title-banner {
+  background-color: #0284c780;
+  width: 100%;
+  padding: 8px 0;
+  margin-bottom: 12px;
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+}
+
+/* Link Styling */
+.card-link {
+  color: #2b4bee;
+  font-size: 12px;
+  text-decoration: underline;
+  word-break: break-all;
+  line-height: 1.4;
+}
+
+.card-link:hover {
+  color: #1a32a8;
+}
+
+/* Distinct Right Edge Borders */
+.border-pink {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #0284c7;
+}
+
+.border-black {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  bottom: 30%;
+  width: 3px;
+  background-color: #212529;
+}

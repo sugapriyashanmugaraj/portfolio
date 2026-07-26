@@ -1,0 +1,620 @@
+.homeTagLinesCont {
+  display: flex;
+  width: 98%;
+  max-width: 98%;
+  margin: 0 auto;
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  @media screen and (min-width: 0px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 1000px) {
+    flex-direction: row;
+  }
+}
+.tagImageAnim {
+  display: flex;
+  @media screen and (min-width: 0px) {
+    width: 90%;
+    /* justify-content: flex-end; */
+  }
+
+  @media screen and (min-width: 1000px) {
+    width: 40%;
+    justify-content: center;
+  }
+}
+
+.typingAnim {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media screen and (min-width: 0px) {
+    width: 90%;
+  }
+
+  @media screen and (min-width: 1000px) {
+    width: 60%;
+  }
+}
+.tagLineHeadTxt {
+  width: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
+  font-size: 40px;
+  font-family: "OpenSans-Bold";
+  color: #444251;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+.tagLineHeadTxtP {
+  color: #0b2239;
+  font-size: 30px;
+}
+.tagLineHeadTxt,
+.tagLineHeadTxtP {
+  margin: 0;
+}
+
+.tagLineIconRhs {
+  object-fit: contain;
+  @media screen and (min-width: 0px) {
+    height: 50px;
+    width: 50px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    height: 40px;
+    width: 40px;
+  }
+}
+.text1,
+.text2 {
+  width: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  border-right: 2px solid #000;
+}
+
+.text1 {
+  color: #757380;
+  flex-direction: column;
+  animation: typing 2s steps(50, end) forwards,
+    blink-caret 0.75s step-end infinite;
+}
+.text2 {
+  animation: typing1 2s steps(50, end) forwards,
+    blink-caret 0.75s step-end infinite;
+  margin-top: -10px;
+}
+@media screen and (max-width: 1000px) {
+  .text1,
+  .text2 {
+    white-space: normal;
+    overflow: visible;
+  }
+}
+
+.tagLineHeadTxt .text1 {
+  animation-delay: 0s; /* No delay for the first text */
+}
+
+.tagLineHeadTxtP .text2 {
+  opacity: 0;
+  animation-delay: 2s; /* Delay for the second text, matching the duration of the first animation */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+    opacity: 1;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+@keyframes changeBorderColor {
+  0% {
+    border-color: transparent; /* Initial color */
+  }
+  100% {
+    border-color: transparent; /* Color after typing animation completes */
+  }
+}
+@keyframes typing1 {
+  from {
+    width: 0;
+    opacity: 1;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+.tagImgRhs {
+  animation-delay: 1.5s;
+
+  @media screen and (min-width: 0px) {
+    animation: slideInRhsMob 1.5s ease-in-out forwards;
+  }
+
+  @media screen and (min-width: 1000px) {
+    animation: slideInRhs 1.5s ease-in-out forwards;
+  }
+  /* slideInRhsMob */
+}
+
+@keyframes slideInLhs {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRhsMob {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    margin-left: -40px;
+  }
+}
+.searchHomeCont {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  margin-top: 50px;
+  align-items: flex-start;
+  justify-content: space-between;
+  @media screen and (min-width: 0px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 800px) {
+    flex-direction: row;
+  }
+}
+.searchHomeLHS {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  @media screen and (min-width: 0px) {
+    width: 100%;
+    margin-top: -25px;
+  }
+
+  @media screen and (min-width: 800px) {
+    width: 48%;
+    margin-top: 0px;
+  }
+}
+.homeSearchIcon {
+  color: #ccc;
+  font-size: 30px !important;
+}
+.jobSearBarCont {
+  width: 100%;
+}
+.searchHomeRHS {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  @media screen and (min-width: 0px) {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 800px) {
+    width: 48%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+}
+.searchHomeSep {
+  align-self: center;
+  height: 100px;
+  width: 2.5px;
+  background-color: #0b2239;
+  transform: rotate(180deg);
+  @media screen and (min-width: 0px) {
+    display: none;
+  }
+  @media screen and (min-width: 800px) {
+    display: block;
+  }
+}
+.searchHelperHome {
+  font-size: 30px;
+  color: #444251;
+  font-weight: 500;
+}
+.searchHelperHighlight {
+  color: #0b2239;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.searchBarInnBtn {
+  background-color: #0b2239;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 2.5px;
+  color: #fff;
+}
+.searchBarHomeInput ::placeholder {
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.freqSep {
+  margin-top: 10px;
+  height: 2px;
+  background-color: #eee;
+}
+.jobFreqSearch {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: #666251;
+}
+.smallSep {
+  width: 5%;
+  margin: 0 auto;
+  height: 5px;
+  background-color: #0b2239;
+}
+.freqTagsListCont {
+  list-style-type: none;
+  margin-top: 5px;
+
+  @media screen and (min-width: 0px) {
+    width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+    &:not(&:last-child) {
+      padding-bottom: 10px;
+      border-bottom: 2px solid #eee;
+    }
+  }
+  @media screen and (min-width: 600px) {
+    width: 48%;
+    max-width: 48%;
+    &:nth-last-child(-n + 2):not(:first-child) {
+      border: none;
+      padding-bottom: none;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    width: 23%;
+    max-width: 23%;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    &:not(&:last-child) {
+      border: none;
+      padding-bottom: none;
+    }
+    &:nth-last-child(-n + 2):not(:first-child) {
+      border: none;
+      padding-bottom: none;
+    }
+  }
+}
+.freqTagsInnList {
+  display: flex;
+  padding: 0px 0px;
+  margin: 0px 0px;
+  margin-top: 10px;
+}
+
+.freqTagImg {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+.freqJobTitleTxt {
+  font-size: 16px;
+  cursor: pointer;
+  color: rgba(0, 0, 128, 0.721);
+}
+.freqJobTitleTxt:hover {
+  color: navy;
+}
+.freqTagsOutCont {
+  display: flex;
+  width: 80%;
+  max-width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-self: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.seeMoreBtn {
+  border: 2px solid #444251;
+  padding: 10px;
+  color: #0b2239;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 30px;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.seeMoreBtn:hover {
+  background-color: #444251;
+  border: 2px solid #0b2239;
+  color: #fff;
+}
+
+.aboutMeTxt {
+  padding: 5px;
+  font-size: 18px;
+  text-align: justify;
+}
+.postCreatedOn {
+  font-size: 12px;
+  font-weight: 600;
+  color: gray;
+}
+.applicTxt {
+  font-size: 12px;
+  color: #000;
+  font-weight: 600;
+}
+
+/* Container styling */
+.tech-stack-container {
+  display: flex;
+  flex-direction: column; /* Stacks vertically on mobile/small screens */
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Children sizing on small screens (Mobile/Tablet) */
+.tech-stack-container > * {
+  width: 100%;
+  max-width: 500px; /* Expands to a large, clear size on mobile/tablet */
+}
+
+/* Desktop / Larger screens breakpoint */
+@media (min-width: 900px) {
+  .tech-stack-container {
+    flex-direction: row; /* Side-by-side layout on desktop */
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+  }
+
+  /* Equal sizing side-by-side */
+  .tech-stack-container > * {
+    flex: 1;
+    max-width: 550px;
+  }
+}
+
+/* Brand Colors */
+
+.fa-whatsapp {
+  color: #25d366;
+}
+
+.fa-linkedin-in {
+  color: #0a66c2;
+}
+
+.fa-envelope {
+  color: #ea4335;
+}
+
+.fa-github {
+  color: #24292f;
+}
+
+/* //contact strip - sits between the profile header and About Me */
+.contactStripCont {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 4px 20px 20px;
+  padding: 12px 20px;
+  background: #ecf3fb;
+  border-left: 3px solid #0b2239;
+  border-radius: 8px;
+}
+
+.contactStripIcon {
+  font-size: 17px;
+  color: #0b2239;
+  margin-top: 4.5px;
+}
+
+.contactStripText {
+  color: #444251;
+  text-decoration: none;
+  width: 90%;
+  max-width: 90%;
+}
+
+.contactStripText:hover {
+  text-decoration: underline;
+}
+
+/* tablet: keep 2 per row so it never feels cramped */
+@media screen and (max-width: 700px) {
+  .contactStripCont {
+    gap: 14px 24px;
+    margin: 4px 16px 16px;
+  }
+  .contactStripItem {
+    flex: 1 1 45%;
+    min-width: 0;
+  }
+  .contactStripText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+/* mobile: single column, full width per item */
+@media screen and (max-width: 480px) {
+  .contactStripItem {
+    flex: 1 1 100%;
+  }
+}
+
+.contactStripCont {
+  display: flex;
+  width: 100%;
+  gap: 25px;
+}
+
+.imageSection {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  flex-shrink: 0;
+}
+
+.tagImgLhs {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  width: 160px;
+  height: 160px;
+}
+
+.tagLineIcon {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: fill;
+}
+
+.tagImgRhs {
+  position: absolute;
+  right: -10px;
+  top: 30px;
+  animation: slideInRhs 1.5s ease forwards;
+}
+
+.contactDetails {
+  flex: 1;
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.contactStripItem {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+}
+
+.contactStripText {
+  color: #444251;
+  text-decoration: none;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  margin-left: 5px;
+}
+
+.contactStripIcon {
+  color: #0b2239;
+  font-size: 18px;
+}
+
+@keyframes slideInRhs {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+    left: 125px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contactStripCont {
+    flex-direction: column;
+  }
+
+  .contactDetails {
+    width: 100%;
+  }
+
+  .imageSection {
+    width: 160px;
+    height: 160px;
+  }
+
+  .tagImgRhs {
+    right: -5px;
+    top: 20px;
+  }
+}
+
+.contactStripText {
+  color: #444251;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.contactStripText:hover {
+  color: #0b2239;
+}
+.about-text {
+  margin-top: 10px;
+  line-height: 1.8;
+}

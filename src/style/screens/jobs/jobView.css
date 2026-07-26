@@ -1,0 +1,88 @@
+.jobViewBan {
+  background-color: #444251;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.backArrIcon {
+  font-size: 14px !important;
+  color: #fff;
+  margin-left: 10px;
+}
+.backOptCont {
+  display: flex;
+  align-items: center;
+}
+.goBackTxt {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.backOptCont:hover {
+  .goBackTxt {
+    color: #ccc;
+  }
+  .backArrIcon {
+    color: #ccc;
+  }
+}
+.jobViewBanTxt {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pleaseLoginTxt {
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+}
+.banBtnHigh {
+  color: #0b2239;
+  text-decoration: underline;
+}
+.jobDetSepBarCont {
+  width: 800px;
+  height: 75px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 0px 2px #ccc;
+  bottom: -55px;
+  left: 250px;
+  position: absolute;
+  display: flex;
+}
+.jobViewBanPart {
+  width: 25%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.jobViewBanPart:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+.jobViewBanSep {
+  border-right: 1px solid #ccc;
+}
+.jobBanIcon {
+  font-size: 35px !important;
+  color: #0b2239;
+}
+.partTitle {
+  font-size: 12px;
+  color: #444251;
+  text-transform: uppercase;
+}
+.partDet {
+  font-size: 14px;
+  font-weight: 800;
+  color: #444251;
+}

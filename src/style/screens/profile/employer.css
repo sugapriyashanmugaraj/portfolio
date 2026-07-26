@@ -1,0 +1,132 @@
+.employerOutCont {
+  margin-top: 20px;
+}
+.employerProfCont {
+  padding-left: 10px;
+}
+.jobCardsCont {
+  display: flex;
+  max-width: 100%;
+}
+.empName {
+  color: grey;
+  font-weight: 600;
+  font-size: 25px;
+}
+.yourJobsText {
+  font-size: 20px;
+  font-family: "OpenSans-Bold";
+  font-weight: 600;
+  color: #444251;
+  text-transform: capitalize;
+}
+.jobsCountAcc {
+  background-color: #e9619c;
+  border-radius: 2.5px;
+  padding: 5px;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  color: #fff;
+  font-weight: 600;
+}
+.showAllAc {
+  font-size: 14px;
+  color: grey;
+  text-decoration: underline;
+}
+.jobAcCard {
+  width: calc(100% / 4);
+  box-shadow: 0px 0px 2px #ddd;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.jobCardStatusSel {
+  height: 25px;
+  width: 100px;
+  border-radius: 2.5px;
+  text-transform: uppercase;
+  font-size: 10px !important;
+  font-weight: 500;
+}
+.cardStatIn {
+  color: #f12f2f !important;
+}
+.cardStatIn fieldset {
+  border: 1.5px solid #f12f2f;
+}
+.cardStatIn svg {
+  fill: #f12f2f !important;
+}
+
+.cardStatIn:hover fieldset {
+  border: 1.5px solid #f12f2f !important;
+}
+
+.cardStatIn.Mui-focused fieldset {
+  border: 1.5px solid #f12f2f !important;
+}
+.cardStatIn:focus {
+  border: 1.5px solid #f12f2f;
+}
+
+.cardStatAc {
+  color: rgb(8, 147, 8) !important;
+}
+.cardStatAc fieldset {
+  border: 1.5px solid rgb(8, 147, 8);
+}
+.cardStatAc svg {
+  fill: rgb(8, 147, 8) !important;
+}
+
+.cardStatAc:hover fieldset {
+  border: 1.5px solid rgb(8, 147, 8) !important;
+}
+
+.cardStatAc.Mui-focused fieldset {
+  border: 1.5px solid rgb(8, 147, 8) !important;
+}
+.cardStatAc:focus {
+  border: 1.5px solid rgb(8, 147, 8);
+}
+.cardStatDis {
+  color: gray !important;
+}
+.cardStatDis fieldset {
+  border: 1.5px solid gray;
+}
+.cardStatDis svg {
+  fill: gray !important;
+}
+
+.cardStatDis:hover fieldset {
+  border: 1.5px solid gray !important;
+}
+
+.cardStatDis.Mui-focused fieldset {
+  border: 1.5px solid gray !important;
+}
+.cardStatDis:focus {
+  border: 1.5px solid gray;
+}
+.statusIn {
+  height: 30px;
+  outline: none;
+  border: 1.5px solid #de8282;
+  color: #f12f2f;
+}
+
+.statusAc {
+  border-color: rgb(8, 147, 8);
+}
+.cardStatIn {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #f12f2f;
+}
+.menuStatus {
+  text-transform: uppercase;
+  font-size: 10px !important;
+}

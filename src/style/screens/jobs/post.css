@@ -1,0 +1,99 @@
+.plainButtonGrey {
+  border: none;
+  color: #444251;
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+.postJobOutCont {
+  width: 70%;
+  max-width: 70%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.jobsPostCont {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 2px #ddd;
+}
+.postJobTitle {
+  font-size: 22px;
+  text-align: center;
+  color: #0b2239;
+  font-family: "OpenSans-Bold";
+  padding-top: 20px;
+}
+
+.jobInfoTitle {
+  font-size: 16px;
+  color: #444251;
+  font-family: "OpenSans-Bold";
+}
+
+.postFormLabel {
+  font-size: 12px !important;
+  color: gray;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.postJobFormCont {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.formSingleField {
+  width: 45%;
+}
+.formSingleField100 {
+  width: 100%;
+}
+.postJobInp {
+  background-color: #f7f7f7;
+  box-shadow: 0px 0px 2.5px #eee;
+  border-radius: 2.5px;
+  height: 45px;
+  font-size: 14px !important;
+  color: gray !important;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+.searchSkillCont {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  border-radius: 2.5px;
+  border-bottom: rg;
+}
+.postJobIcon {
+  margin-top: 10px;
+}
+.searchInpCont {
+  max-width: 100%;
+  overflow: scroll;
+}
+.postJobInpSearch {
+  padding: 0px;
+  padding-left: 10px;
+  width: 200px;
+  padding-bottom: 0px;
+  overflow-x: auto;
+}
+
+.postJobInpTa {
+  width: 97.5%;
+  height: auto;
+  padding: 10px !important;
+  /* background-color: #f7f7f7;
+  box-shadow: 0px 0px 2.5px #eee;
+  border-radius: 2.5px; */
+}
+
+.jobFormSep {
+  height: 1px;
+  background-color: #eee;
+  width: 100%;
+}

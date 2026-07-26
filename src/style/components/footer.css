@@ -1,0 +1,671 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.portfolioFooter {
+  position: relative;
+  overflow: hidden;
+  padding: 90px 7%;
+  background: linear-gradient(
+    135deg,
+    #03111f 0%,
+    #08233e 35%,
+    #0c3b67 75%,
+    #1262b3 100%
+  );
+  font-family: "Poppins", sans-serif;
+}
+
+.portfolioFooter::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  background: rgba(76, 153, 255, 0.12);
+  border-radius: 50%;
+  filter: blur(70px);
+  top: -120px;
+  right: -100px;
+}
+
+.portfolioFooter::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  background: rgba(20, 110, 255, 0.14);
+  border-radius: 50%;
+  filter: blur(60px);
+  left: -120px;
+  bottom: -120px;
+}
+
+/* ===========================
+   GLASS CONTAINER
+=========================== */
+
+.footerGlass {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+
+  gap: 45px;
+
+  padding: 45px;
+
+  border-radius: 28px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+}
+
+/* ===========================
+   LEFT
+=========================== */
+
+.footerLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerTag {
+  width: max-content;
+
+  padding: 8px 18px;
+
+  border-radius: 30px;
+
+  background: rgba(43, 140, 255, 0.18);
+
+  color: #90c8ff;
+
+  border: 1px solid rgba(96, 170, 255, 0.35);
+
+  font-size: 0.85rem;
+
+  font-weight: 600;
+
+  letter-spacing: 0.8px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 18px;
+}
+
+.footerTitle {
+  color: #fff;
+
+  font-size: 2.35rem;
+
+  line-height: 1.3;
+
+  margin-bottom: 18px;
+
+  font-weight: 700;
+}
+
+.footerDesc {
+  color: #c6dfff;
+
+  line-height: 1.8;
+
+  margin-bottom: 35px;
+
+  font-size: 1rem;
+}
+
+/* ===========================
+   FORM
+=========================== */
+
+.footerForm {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+.footerForm input,
+.footerForm textarea {
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  resize: none;
+
+  padding: 16px 20px;
+
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  color: #fff;
+
+  font-size: 0.95rem;
+
+  transition: 0.35s;
+
+  box-sizing: border-box;
+}
+
+.footerForm input::placeholder,
+.footerForm textarea::placeholder {
+  color: #aacdf7;
+}
+
+.footerForm input:focus,
+.footerForm textarea:focus {
+  border-color: #4fa5ff;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  box-shadow: 0 0 20px rgba(52, 151, 255, 0.25);
+}
+
+.footerForm textarea {
+  min-height: 170px;
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.sendBtn {
+  width: max-content;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  border: none;
+
+  cursor: pointer;
+
+  padding: 16px 32px;
+
+  border-radius: 14px;
+
+  color: #fff;
+
+  font-size: 0.95rem;
+
+  font-weight: 600;
+
+  background: linear-gradient(135deg, #2284ff, #1463ff);
+
+  transition: 0.35s;
+}
+
+.sendBtn:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 15px 35px rgba(40, 130, 255, 0.35);
+}
+
+.sendBtn svg {
+  transition: 0.35s;
+}
+
+.sendBtn:hover svg:last-child {
+  transform: translateX(6px);
+}
+
+/* ===========================
+   RIGHT
+=========================== */
+
+.footerRight {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+.footerInfoGrid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 24px;
+}
+
+/* ===========================
+   GLASS CARDS
+=========================== */
+
+.footerCard {
+  background: rgba(255, 255, 255, 0.07);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 20px;
+
+  padding: 28px;
+
+  transition: 0.35s;
+}
+
+.footerCard:hover {
+  transform: translateY(-6px);
+
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.footerCard h3 {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #fff;
+
+  font-size: 1.2rem;
+
+  margin-bottom: 20px;
+}
+
+.footerCard p {
+  color: #cde3ff;
+
+  line-height: 1.8;
+}
+
+/* ===========================
+   CHIPS
+=========================== */
+
+.chipContainer {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-top: 24px;
+}
+
+.footerChip {
+  padding: 9px 16px;
+
+  border-radius: 30px;
+
+  background: rgba(32, 126, 255, 0.18);
+
+  color: #d9ecff;
+
+  border: 1px solid rgba(70, 150, 255, 0.25);
+
+  font-size: 0.82rem;
+
+  transition: 0.3s;
+}
+
+.footerChip:hover {
+  transform: scale(1.06);
+
+  background: #2587ff;
+
+  color: white;
+}
+/* ===========================
+   CONTACT INFO
+=========================== */
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+  color: #d8ebff;
+  font-size: 0.95rem;
+  transition: 0.3s;
+  word-break: break-word;
+}
+
+.contactItem:last-child {
+  margin-bottom: 0;
+}
+
+.contactItem svg {
+  color: #4aa3ff;
+  min-width: 18px;
+  font-size: 18px;
+}
+
+.contactItem:hover {
+  color: #ffffff;
+  transform: translateX(6px);
+}
+
+/* ===========================
+   SOCIAL
+=========================== */
+
+.socialLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.socialBtn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #d9ecff;
+  cursor: pointer;
+  transition: 0.35s;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.socialBtn:hover {
+  background: linear-gradient(135deg, #248cff, #0e64ff);
+  transform: translateX(8px);
+  color: white;
+  box-shadow: 0 10px 25px rgba(0, 119, 255, 0.3);
+}
+
+.socialIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 18px;
+}
+
+/* ===========================
+   FOOTER BOTTOM
+=========================== */
+
+.footerBottom {
+  position: relative;
+  z-index: 2;
+  margin-top: 55px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+
+  color: #c6dfff;
+  font-size: 0.92rem;
+  flex-wrap: wrap;
+}
+
+.footerBottomLeft,
+.footerBottomCenter {
+  flex: 1;
+}
+
+.footerBottomCenter {
+  text-align: center;
+}
+
+.footerTop {
+  cursor: pointer;
+  color: #90c9ff;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.footerTop:hover {
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* ===========================
+   HOVER ANIMATION
+=========================== */
+
+.footerGlass:hover {
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45);
+}
+
+.footerCard,
+.sendBtn,
+.socialBtn,
+.footerChip {
+  transition: all 0.35s ease;
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width: 1024px) {
+  .portfolioFooter {
+    padding: 70px 5%;
+  }
+
+  .footerGlass {
+    grid-template-columns: 1fr;
+
+    padding: 35px;
+
+    gap: 35px;
+  }
+
+  .footerInfoGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footerTitle {
+    font-size: 2rem;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .footerBottomCenter {
+    text-align: center;
+  }
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+  .portfolioFooter {
+    padding: 55px 20px;
+  }
+
+  .footerGlass {
+    padding: 24px;
+
+    border-radius: 22px;
+
+    gap: 28px;
+  }
+
+  .footerTitle {
+    font-size: 1.65rem;
+
+    line-height: 1.4;
+  }
+
+  .footerDesc {
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+  }
+
+  .footerInfoGrid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .footerCard {
+    padding: 22px;
+  }
+
+  .footerCard h3 {
+    font-size: 1.08rem;
+  }
+
+  .footerChip {
+    font-size: 0.78rem;
+
+    padding: 8px 14px;
+  }
+
+  .sendBtn {
+    width: 100%;
+
+    justify-content: center;
+
+    padding: 15px;
+  }
+
+  .footerBottom {
+    gap: 15px;
+
+    font-size: 0.82rem;
+  }
+
+  .footerBottomLeft,
+  .footerBottomCenter {
+    flex: none;
+
+    width: 100%;
+    text-align: center;
+  }
+
+  .footerTop {
+    width: 100%;
+
+    text-align: center;
+  }
+}
+
+/* ===========================
+   SMALL MOBILE
+=========================== */
+
+@media (max-width: 480px) {
+  .portfolioFooter {
+    padding: 45px 15px;
+  }
+
+  .footerGlass {
+    padding: 18px;
+  }
+
+  .footerTag {
+    font-size: 0.72rem;
+
+    padding: 7px 14px;
+  }
+
+  .footerTitle {
+    font-size: 1.4rem;
+  }
+
+  .footerForm input,
+  .footerForm textarea {
+    padding: 14px;
+
+    font-size: 0.9rem;
+  }
+
+  .footerCard {
+    padding: 18px;
+  }
+
+  .contactItem {
+    font-size: 0.86rem;
+
+    align-items: flex-start;
+  }
+
+  .socialBtn {
+    padding: 13px 15px;
+
+    font-size: 0.88rem;
+  }
+
+  .socialIcon {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+  }
+
+  .footerChip {
+    font-size: 0.72rem;
+  }
+
+  .footerBottom {
+    font-size: 0.76rem;
+  }
+}
+
+/* ===========================
+   LARGE DESKTOP
+=========================== */
+
+@media (min-width: 1600px) {
+  .footerGlass {
+    max-width: 1500px;
+    margin: auto;
+  }
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+.footerForm textarea::-webkit-scrollbar {
+  width: 8px;
+}
+
+.footerForm textarea::-webkit-scrollbar-thumb {
+  background: #2f8cff;
+
+  border-radius: 10px;
+}
+
+/* ===========================
+   SELECTION
+=========================== */
+
+.portfolioFooter *::selection {
+  background: #2688ff;
+  color: #fff;
+}

@@ -1,0 +1,24 @@
+.mainNavCont {
+  height: 100%;
+}
+.mainSectionCont {
+  height: 100%;
+  margin: 0 auto;
+  z-index: 1;
+  min-height: 1000px;
+  @media screen and (min-width: 0px) {
+    width: 90%;
+    padding-top: 0px;
+  }
+
+  @media screen and (min-width: 1025px) {
+    width: 94%;
+    padding-top: 5px;
+  }
+  @media screen and (min-width: 1500px) {
+    width: 70%;
+  }
+}
+.progressWhite20 {
+  color: #fff !important;
+}

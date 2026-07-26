@@ -1,0 +1,139 @@
+.jobsListOut {
+  box-shadow: 0px 0px 5px #ccc;
+  width: 100%;
+  background-color: #fff;
+}
+.jobSearchBarJobs {
+  padding: 15px;
+  box-shadow: 0px 2.5px 5px #ccc;
+}
+.jobSearchJobsInp {
+  background-color: #fafafa;
+  height: 50px;
+}
+.searchJobsL {
+  color: #bebebe;
+  margin-right: 10px;
+}
+.jobsListInCont {
+  display: flex;
+}
+
+.filterHeading {
+  font-size: 18px;
+  font-weight: 600;
+  color: grey;
+}
+.jobsListSearchTxt {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: grey;
+  font-weight: 600;
+}
+.filterSection {
+  width: 30%;
+  padding: 15px;
+  box-sizing: border-box;
+  border-right: 1px solid #ccc;
+}
+
+.jobSearchFilterInp {
+  height: 40px;
+  width: 90%;
+  padding-right: 5px;
+}
+.filtSearchBtn {
+  padding: 7.5px;
+}
+.filterSep {
+  height: 0.25px;
+  background-color: #ccc;
+}
+
+.listSection {
+  width: 70%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.jobsCountList {
+  font-size: 12px;
+}
+.jobListJobCard {
+  padding: 20px;
+  box-shadow: 0px 0px 2.5px #ccc;
+  margin-top: 20px;
+  display: flex;
+}
+.jobListPagCont {
+  margin-top: 20px;
+  display: flex;
+}
+.singlePageCont {
+  padding: 10px 15px 10px 15px;
+  display: flex;
+  border: 1px solid #ddd;
+  width: max-content;
+  font-size: 10px;
+  color: #0b2239;
+  font-weight: 500;
+  cursor: pointer;
+}
+.singlePageCont:first-child {
+  border-right: none;
+}
+.pageNum {
+  font-size: 12px;
+}
+.empProfileAvatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 37.25px;
+  object-fit: cover;
+}
+.jobListCardTitle {
+  font-size: 16px;
+}
+.jobTypeTextAny {
+  margin-left: 10px;
+  color: grey;
+  border: 0.5px solid #bbb;
+  background-color: #eee;
+  padding: 2.5px 7.5px 2.5px 7.5px;
+  font-size: 10px;
+  font-weight: normal;
+  text-transform: capitalize;
+  border-radius: 2.5px;
+}
+.jobTypeTextPart {
+  color: #0b2239;
+  border: 0.5px solid #0b2239;
+  background-color: #ee328357;
+}
+.jobTypeTextFull {
+  border: 0.5px solid green;
+  color: green;
+  background-color: rgba(0, 128, 0, 0.197);
+}
+.jobPoster {
+  font-size: 12px;
+  font-weight: 400;
+}
+.posterDateSep {
+  margin-top: -7.5px;
+}
+
+.postedOnTxt {
+  font-size: 12px;
+  font-style: italic;
+}
+.packageTxt {
+  font-size: 12px;
+}
+.jobDescListTxt {
+  font-size: 14px;
+}
+.seeMoreJobList {
+  font-size: 14px;
+  color: #0b2239;
+  cursor: pointer;
+}

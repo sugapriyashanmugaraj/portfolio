@@ -1,0 +1,211 @@
+.logoName {
+  font-family: "OpenSans-Bold";
+  font-size: 25px;
+  color: #0b2239;
+}
+.headerWinCont {
+  width: 100%;
+  height: 40px;
+  background-color: #0b2239;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  position: fixed;
+  z-index: 10;
+}
+
+.headerWinInnCont {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (min-width: 0px) {
+    width: 97.5%;
+  }
+  @media screen and (min-width: 1000px) {
+    width: 95%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 92.5%;
+  }
+
+  @media screen and (min-width: 1500px) {
+    width: 70%;
+  }
+}
+/* #60A5FA 
+#444251 
+#eca3c3*/
+.headerLogoCont {
+  width: 35%;
+  display: flex;
+
+  @media screen and (min-width: 0px) {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  @media screen and (min-width: 1500px) {
+    align-items: center;
+  }
+}
+.helpIcon {
+  color: #444251;
+}
+.headerMenusCont {
+  width: 65%;
+  display: flex;
+  padding-top: 20px;
+}
+.menuName {
+  font-size: 16px;
+  font-family: "OpenSans";
+  font-weight: 500;
+  cursor: pointer;
+}
+.highMenuName {
+  font-size: 18px;
+  font-family: "OpenSans";
+  font-weight: 600;
+  color: #0b2239;
+}
+.announceJobBtn {
+  background-color: #0b2239;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+}
+.getJobBtn {
+  background-color: #444251;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+}
+.logoImg {
+  height: 50px;
+  object-fit: contain;
+}
+
+.headerMobCont {
+  background-color: #0b2239;
+  width: 100%;
+  height: 15px;
+  padding-bottom: 10px;
+  /* color: #eca3c3; */
+  border-bottom: 1px solid #eee;
+  position: fixed;
+  z-index: 10;
+}
+.headerMobInnCont {
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-top: 20px;
+}
+.mobHeadIcon {
+  font-size: 40px;
+  color: #0b2239;
+}
+.mobImgLogo {
+  height: 50px;
+  width: 150px;
+  object-fit: contain;
+}
+.sideMenuCont {
+  background-color: #fff;
+  z-index: 2;
+  position: fixed;
+  min-height: 1000px;
+  width: 30%;
+  padding-left: 5.5%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-right: 2px solid #eee;
+  animation: slideInFromLeft 0.25s ease-in-out;
+}
+.sideMenuList {
+  list-style-type: none;
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+.sideSingleMenu {
+  padding: 10px;
+  padding-left: inherit;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.searchEmpHeadCont {
+  width: 35%;
+  .headerLogoCont {
+    width: auto;
+  }
+}
+.searchEmpHeadInnCont {
+  width: 100%;
+  margin-left: 5px;
+}
+.sepHead {
+  font-size: 30px;
+  color: #ddd;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.accountTxt {
+  color: #000000e9;
+}
+
+.settingsMenu {
+  display: none;
+  right: 15.5%;
+  position: absolute;
+  width: 225px;
+  margin-top: 15px;
+  box-shadow: 0px 0px 2px #ccc;
+  border-radius: 2.5px;
+  background-color: #fff;
+  box-sizing: border-box;
+  ul {
+    list-style-type: none;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    li {
+      cursor: pointer;
+      display: flex;
+      margin: 0px 0px;
+      padding: 10px;
+      color: #444251;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+}
+
+.settingsMenu > ul li:first-child {
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+}
+.settingsMenu > ul li:last-child {
+  border-top: 1px solid #ddd;
+}
+.rolePrem {
+  background-color: green;
+  padding: 5px;
+  color: #fff;
+  border-radius: 2.5px;
+  font-weight: 500;
+}
