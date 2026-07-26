@@ -1,6 +1,6 @@
 import appImages from "../../assets";
 import "../../style/screens/achievement.css";
-
+import { FaAward } from "react-icons/fa";
 // FontAwesome or Lucide icons can be used. Using Inline SVGs/FontAwesome icons here.
 const achievementsData = [
   {
@@ -38,7 +38,7 @@ const Achievement = () => {
           >
             {/* Center Icon Badge */}
             <div className="icon-badge">
-              <i className="fa-solid fa-award"></i>
+              <FaAward className="awardIcon" />
             </div>
 
             {/* Card Content */}

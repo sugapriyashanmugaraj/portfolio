@@ -45,7 +45,7 @@
   width: 100%;
   max-width: 100%;
   word-wrap: break-word;
-  font-size: 40px;
+  font-size: 35px;
   font-family: "OpenSans-Bold";
   color: #444251;
   text-align: right;
@@ -73,7 +73,7 @@
     width: 40px;
   }
 }
-.text1,
+/* .text1,
 .text2 {
   width: 100%;
   max-width: 100%;
@@ -82,8 +82,8 @@
   white-space: nowrap;
   display: inline-block;
   border-right: 2px solid #000;
-}
-
+} */
+/* 
 .text1 {
   color: #757380;
   flex-direction: column;
@@ -94,7 +94,7 @@
   animation: typing1 2s steps(50, end) forwards,
     blink-caret 0.75s step-end infinite;
   margin-top: -10px;
-}
+} */
 @media screen and (max-width: 1000px) {
   .text1,
   .text2 {
@@ -103,16 +103,16 @@
   }
 }
 
-.tagLineHeadTxt .text1 {
-  animation-delay: 0s; /* No delay for the first text */
-}
+/* .tagLineHeadTxt .text1 {
+  animation-delay: 0s;
+} */
 
-.tagLineHeadTxtP .text2 {
+/* .tagLineHeadTxtP .text2 {
   opacity: 0;
-  animation-delay: 2s; /* Delay for the second text, matching the duration of the first animation */
-}
+  animation-delay: 2s;
+} */
 
-@keyframes typing {
+/* @keyframes typing {
   from {
     width: 0;
     opacity: 1;
@@ -121,7 +121,7 @@
     width: 100%;
     opacity: 1;
   }
-}
+} */
 @keyframes changeBorderColor {
   0% {
     border-color: transparent; /* Initial color */
@@ -130,7 +130,7 @@
     border-color: transparent; /* Color after typing animation completes */
   }
 }
-@keyframes typing1 {
+/* @keyframes typing1 {
   from {
     width: 0;
     opacity: 1;
@@ -148,7 +148,7 @@
   50% {
     border-color: black;
   }
-}
+} */
 
 .tagImgRhs {
   animation-delay: 1.5s;
@@ -617,4 +617,73 @@
 .about-text {
   margin-top: 10px;
   line-height: 1.8;
+}
+.text1,
+.text2 {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden; /* keep this on mobile too */
+  white-space: nowrap; /* keep this on mobile too */
+  display: inline-block;
+  border-right: 2px solid #000;
+}
+
+.text1 {
+  color: #757380;
+  flex-direction: column;
+  animation: typing 2s steps(50, end) forwards,
+    blink-caret 0.75s step-end 3 forwards; /* finite: caret goes transparent & stays that way */
+}
+
+.text2 {
+  margin-top: -10px;
+  opacity: 0;
+  animation: typing1 2s steps(50, end) 2s forwards,
+    blink-caret 0.75s step-end 3 2s forwards, revealText2 0s linear 2s forwards;
+}
+
+@keyframes revealText2 {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Instead of unwrapping text on mobile (which broke the clip-reveal effect),
+   just scale the font down so nowrap text still fits the viewport */
+@media screen and (max-width: 1000px) {
+  .tagLineHeadTxt {
+    font-size: clamp(16px, 4vw, 37.5px);
+  }
+  .tagLineHeadTxtP {
+    font-size: clamp(14px, 3.5vw, 27.5px);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
 }

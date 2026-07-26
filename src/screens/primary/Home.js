@@ -166,7 +166,7 @@ const Home = () => {
         <Experience />
       </div>
 
-      <div className="mt30">
+      <div className="mt20">
         <h1 className="jobFreqSearch">Key Achievements</h1>
         <div className="smallSep mt10" />
         <Achievement />

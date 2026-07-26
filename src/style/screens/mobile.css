@@ -294,10 +294,7 @@
   border-radius: 2px;
   margin: 6px auto;
 }
-.screen-title {
-  font-size: 25px;
-  font-weight: bold;
-}
+
 /* Page Setup */
 .mobile-view-wrapper {
   display: flex;
@@ -396,7 +393,6 @@
   font-size: 22px;
   font-weight: 800;
   color: #0f172a;
-  margin: 4px 0 2px;
   letter-spacing: -0.5px;
 }
 
