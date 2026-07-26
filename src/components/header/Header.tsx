@@ -2,13 +2,10 @@ import React, { Fragment, useEffect, useState } from "react";
 import HeaderWindow from "./HeaderWindow";
 import HeaderMobile from "./HeaderMobile";
 import "../../style/components/header.css";
-import HeaderEmployer from "./HeaderEmployer";
-import constants from "../../utils/constants";
 
 const Header: React.FC = () => {
   const [deviceInfo, setDeviceInfo] = useState<string | false>(false);
-  const token = localStorage.getItem(constants.TOKEN);
-  const [role] = useState<any>(token ? "employer" : "");
+
   function checkIsMobile() {
     const isMobile = window.innerWidth <= 1025 ? true : false;
 

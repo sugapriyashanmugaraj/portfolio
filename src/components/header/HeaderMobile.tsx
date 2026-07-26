@@ -1,32 +1,10 @@
-import React, { Fragment } from "react";
-import appImages from "../../assets";
-import { useHeaderContext } from "../../context/HeaderContext";
-import { useNavigate } from "react-router-dom";
+import { Fragment } from "react";
 
 const HeaderMobile = () => {
-  const { toggleMenu, handleToggle } = useHeaderContext();
-  const navigate = useNavigate();
   return (
     <Fragment>
       <div className="headerMobCont dfacjb">
-        <div className="headerMobInnCont">
-          {/* <div className="daff cp" onClick={handleToggle}>
-            {toggleMenu ? (
-              <i className="material-icons mobHeadIcon">menu_open</i>
-            ) : (
-              <i className="material-icons mobHeadIcon">menu</i>
-            )}
-          </div>
-          <div
-            className="dfac"
-            onClick={() => {
-              handleToggle(false);
-              navigate("/");
-            }}
-          >
-            <img alt="logo" className="mobImgLogo" src={appImages.logo} />
-          </div> */}
-        </div>
+        <div className="headerMobInnCont"></div>
       </div>
       {/* <div style={{ height: 87.5, width: "100%", zIndex: -1 }}></div>
 

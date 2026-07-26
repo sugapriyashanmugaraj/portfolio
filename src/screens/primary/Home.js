@@ -6,7 +6,6 @@ import { FaEnvelope, FaPhoneAlt, FaLinkedinIn } from "react-icons/fa";
 import Education from "./Education";
 import Experience from "./Experience";
 import Achievement from "./Achievement";
-import { RiUserSearchFill } from "react-icons/ri";
 import MobileScreen from "./MobileScreen";
 import Backend from "./Backend";
 import Projects from "./Projects";
