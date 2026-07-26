@@ -59,7 +59,6 @@ const Home = () => {
                   src={appImages.icons.searchGrey}
                   className="tagLineIconRhs"
                 />
-                {/* <RiUserSearchFill className="tagLineIconRhs" /> */}
               </div>
             </div>
 

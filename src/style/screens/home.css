@@ -474,6 +474,7 @@
   text-decoration: none;
   width: 90%;
   max-width: 90%;
+  text-decoration: underline;
 }
 
 .contactStripText:hover {
