@@ -470,17 +470,31 @@
 }
 
 .contactStripText {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
   color: #444251;
-  text-decoration: none;
+  text-decoration: underline;
+  cursor: pointer;
   width: 90%;
   max-width: 90%;
-  text-decoration: underline;
+  text-align: left;
+  font: inherit;
+  p {
+    text-decoration-line: underline;
+    text-decoration-color: currentColor;
+  }
 }
 
 .contactStripText:hover {
   text-decoration: underline;
 }
 
+.contactStripText:focus {
+  outline: none;
+}
 /* tablet: keep 2 per row so it never feels cramped */
 @media screen and (max-width: 700px) {
   .contactStripCont {
@@ -498,6 +512,13 @@
   }
 }
 
+.contactStripText span {
+  text-decoration: underline;
+}
+
+.contactStripText:hover span {
+  text-decoration: underline;
+}
 /* mobile: single column, full width per item */
 @media screen and (max-width: 480px) {
   .contactStripItem {
@@ -545,11 +566,9 @@
 .contactDetails {
   flex: 1;
   min-width: 0;
-
   display: flex;
   flex-direction: column;
   gap: 15px;
-
   align-items: flex-end;
   justify-content: center;
 }
@@ -585,7 +604,49 @@
     left: 125px;
   }
 }
+/* Tablet */
+@media (min-width: 768px) and (max-width: 999px) {
+  .contactStripCont {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
 
+  .imageSection {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+  }
+
+  .contactDetails {
+    flex: 1;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .contactStripItem {
+    width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .contactStripCont {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contactDetails {
+    width: 100%;
+    align-items: center;
+  }
+
+  .contactStripItem {
+    justify-content: center;
+  }
+}
+/* 
 @media (max-width: 1000px) {
   .contactStripCont {
     flex-direction: column;
@@ -604,7 +665,7 @@
     right: -5px;
     top: 20px;
   }
-}
+} */
 
 .contactStripText {
   color: #444251;

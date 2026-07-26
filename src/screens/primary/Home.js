@@ -65,31 +65,40 @@ const Home = () => {
             <div className="contactDetails">
               <div className="contactStripItem">
                 <FaEnvelope className="contactStripIcon" />
-                <a className="contactStripText" href={`mailto:${email}`}>
-                  {email}
-                </a>
+                <button
+                  type="button"
+                  className="contactStripText"
+                  onClick={() => window.open(`mailto:${email}`)}
+                >
+                  <p>{email}</p>
+                </button>
               </div>
 
               <div className="contactStripItem">
                 <FaPhoneAlt className="contactStripIcon" />
-                <a
+                <button
+                  type="button"
                   className="contactStripText"
-                  href={`tel:${phone.replace(/\s/g, "")}`}
+                  onClick={() => window.open(`tel:${phone.replace(/\s/g, "")}`)}
                 >
-                  {phone}
-                </a>
+                  <p>{phone}</p>
+                </button>
               </div>
 
               <div className="contactStripItem">
                 <FaLinkedinIn className="contactStripIcon" />
-                <a
+                <button
+                  type="button"
                   className="contactStripText"
-                  href={`https://${linkedin}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/sugapriyashanmugaraj",
+                      "_blank",
+                    )
+                  }
                 >
-                  {linkedin}
-                </a>
+                  <p>{linkedin}</p>
+                </button>
               </div>
             </div>
           </div>
