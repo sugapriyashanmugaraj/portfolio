@@ -1,8 +1,14 @@
 import appImages from "../../assets";
 import "../../style/screens/main.css";
 import "../../style/screens/home.css";
+import ResumePDF from "../../assets/resume/Sugapriya_S_2026.pdf";
 import React, { Fragment, useState } from "react";
-import { FaEnvelope, FaPhoneAlt, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaPhoneAlt,
+  FaLinkedinIn,
+  FaDownload,
+} from "react-icons/fa";
 import Education from "./Education";
 import Experience from "./Experience";
 import Achievement from "./Achievement";
@@ -98,6 +104,24 @@ const Home = () => {
                   }
                 >
                   <p>{linkedin}</p>
+                </button>
+              </div>
+
+              <div className="contactStripItem">
+                <FaDownload className="contactStripIcon" />
+                <button
+                  type="button"
+                  className="contactStripText"
+                  onClick={() => {
+                    const link = document.createElement("a");
+                    link.href = ResumePDF;
+                    link.download = "Sugapriya_Shanmugaraj_Resume_2026.pdf";
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                  }}
+                >
+                  <p>Download Resume</p>
                 </button>
               </div>
             </div>
